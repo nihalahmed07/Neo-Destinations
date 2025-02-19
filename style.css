@@ -41,7 +41,7 @@ nav {
     width: 100%;
     height: 60px;
     position: fixed;
-    background-color: #222;
+    background-color: #0d1b2a;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
@@ -187,3 +187,172 @@ nav .logo {
     transform: translateY(-5px);
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
 }
+
+/* Locations */
+
+.locations-title {
+    text-align: center;
+}
+
+.locations-title h2 {
+    font-size: 40px;
+    font-weight: 650;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+/* Layout for location content */
+.location-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual location box */
+.col-content {
+    position: relative;
+    filter: brightness(95%);
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    text-align: center;
+    cursor: pointer;
+}
+
+.col-content img {
+    width: 320px;
+    height: 500px;
+    border-radius: 27px;
+    margin-bottom: 20px;
+}
+.col-content video {
+    width: 320px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 27px;
+    margin-bottom: 20px;
+}
+
+/* Country Name */
+.col-content h5 {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    left: 20px;
+    bottom: 105px;
+}
+
+/* City Name */
+.col-content p {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 20px;
+    bottom: 80px;
+}
+
+/* Hover Effect */
+.col-content:hover {
+    filter: brightness(120%);
+    transform: scale(1.03);
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 80px;
+    background-color: #0d1b2a;
+}
+
+.foot {
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footlinks h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Underline effect for headings */
+.footlinks h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: white;
+}
+
+.footlinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footlinks ul li {
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a {
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.footlinks ul li a:hover {
+    transform: translateX(6px);
+    color: white;
+}
+
+/* Social Icons */
+.social a {
+    font-size: 25px;
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    color: #415a77;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Social Icons Hover Effect */
+.social a:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer Copyright */
+.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e1dd;
+    /* text-align: center; */
+    margin: 0px 30px;
+    margin-top: 20px;
+    padding: 15px 0px;
+}
+
+.end p {
+    font-size: 11px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
