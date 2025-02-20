@@ -188,22 +188,24 @@ nav .logo {
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Locations */
-
-.locations-title {
+/* Destinations */
+.destinations{
+    margin-top: 20px;
+}
+.destination-title {
     text-align: center;
 }
 
-.locations-title h2 {
+.destination-title h2 {
     font-size: 40px;
     font-weight: 650;
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 10px;
     line-height: 2;
 }
 
 /* Layout for location content */
-.location-content {
+.destination-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -256,72 +258,490 @@ nav .logo {
 .col-content:hover {
     filter: brightness(120%);
     transform: scale(1.03);
+    display: unset;
+}
+
+/* Package video Section */
+/* .packages {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.package-heading h2 {
+    font-size: 28px;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.package-heading p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+}
+
+.package-card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.package-info {
+    padding: 15px;
+}
+
+.package-info h3 {
+    font-size: 20px;
+    color: #0d1b2a;
+    margin-bottom: 8px;
+}
+
+.package-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #1d3557;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #457b9d;
+} */
+
+/* Package Section */
+.packages {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.package-heading h2 {
+    font-size: 28px;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.package-heading p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    width: 260px;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.package-info {
+    padding: 15px;
+}
+
+.package-info h3 {
+    font-size: 20px;
+    color: #0d1b2a;
+    margin-bottom: 8px;
+}
+
+.package-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #1d3557;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #457b9d;
+}
+
+
+/* Bookings  */
+
+.booking {
+    background: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.booking h2 {
+    font-size: 2rem;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.booking p {
+    font-size: 1rem;
+    color: #415a77;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 630px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: #1b263b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #415a77;
+}
+
+
+/* About Us Section */
+.about-us {
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #1d3557;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.about-btn:hover {
+    background-color: #457b9d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+}
+
+.contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact form {
+    width: 45%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact form button {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #084298;
+}
+
+.contact-info {
+    width: 45%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center
+}
+
+.social a {
+    font-size: 24px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: #0d1b2a;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.2);
 }
 
 /* Footer Styling */
-.footer {
-    margin-top: 80px;
-    background-color: #0d1b2a;
-}
 
-.foot {
-    padding: 20px 0;
+.footer {
+    background-color: #0d1b2a;
+    color: white;
+    /* padding: 40px 20px 0px; */
+    text-align: center;
 }
 
 .footer-content {
+    /* gap: 30px; */
+    /* margin: 0px 30px; */
+    /* padding: 0px 20px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.footlinks h4 {
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 30px;
+    padding: 0 0 10px;
     position: relative;
+    z-index: 0
+}
+.footer-section {
+    text-align: left;
+    margin: 35px 20px 0px;
+    z-index: 1
 }
 
-/* Underline effect for headings */
-.footlinks h4::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 70px;
-    left: 0;
-    bottom: -7px;
-    background: white;
+/* Footer Abouts Section */
+.about-section{
+    flex-basis: 26%;
+}
+.detail-content {
+    padding-left: 5%
+}
+.detail-content .detail-content-slogan {
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.75;
+    margin-top: 6px
+}
+.detail-content .follow-apps {
+    align-items: center;
+    display: flex;
+    margin-top: 10px
+}
+.detail-content .follow-apps .follow-apps-text {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.17;
+    margin: 6px 14px 0 0
 }
 
-.footlinks ul {
-    list-style: none;
-    padding: 0;
+.detail-content .follow-apps .social-icons {
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center
 }
 
-.footlinks ul li {
-    margin-bottom: 15px;
-}
-
-.footlinks ul li a {
-    font-size: 17px;
-    color: #dddddd;
-    display: block;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-/* Hover effect */
-.footlinks ul li a:hover {
-    transform: translateX(6px);
-    color: white;
-}
-
-/* Social Icons */
-.social a {
-    font-size: 25px;
-    margin: 4px;
-    height: 40px;
-    width: 40px;
+.detail-content .follow-apps .social-icons a {
+    font-size: 15px;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
     color: #415a77;
     background-color: white;
     display: inline-flex;
@@ -331,28 +751,111 @@ nav .logo {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Social Icons Hover Effect */
-.social a:hover {
+.detail-content .follow-apps .social-icons a:hover {
     transform: scale(1.2);
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Footer Copyright */
-.end {
+.about-section .footer-logo-title {
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.about-section .footer-logo-title .footer-logo {
+    width: 30px;
+    margin-right: 13px;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-section h4::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: white;
+    margin: 5px auto;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin:0;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 12px;
+}
+
+.contact-section p{
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    padding: 0;
+    gap: 6px;
+}
+
+.newsletter input {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.newsletter button {
+    background: #ff9800;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 12px;
+}
+
+.newsletter button:hover {
+    background: #e68900;
+}
+
+.footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #e0e1dd;
-    /* text-align: center; */
     margin: 0px 30px;
     margin-top: 20px;
     padding: 15px 0px;
 }
 
-.end p {
+.footer-bottom p {
     font-size: 11px;
     color: white;
     letter-spacing: 1px;
     font-weight: 300;
 }
-
