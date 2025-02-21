@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -88,6 +88,51 @@ nav .logo {
     color: black;
     box-shadow: 5px 10px 30px rgba(85, 85, 85, 0.2);
     border-radius: 5px;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    /* margin-right: 30px; */
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+
+  @media (max-width: 1060px) {
+    .checkbtn {
+      display: block;
+    }
+    nav ul {
+      position: fixed;
+      width: 25%;
+      height: 45vh;
+      background: #415a77;
+      top: 60px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      flex-direction: column;
+    }
+    nav ul li {
+      display: block;
+      margin: 15px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    #check:checked~ul {
+      left: 75%;
+    }
+  }
+
+@media (max-width: 1180px) {
+    
 }
 
 /* Title Styling */
@@ -186,6 +231,10 @@ nav .logo {
 .service-box:hover {
     transform: translateY(-5px);
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1170px) {
+    
 }
 
 /* Destinations */
@@ -440,7 +489,7 @@ nav .logo {
 /* Bookings  */
 
 .booking {
-    background: #f8f9fa;
+    background: white;
     padding: 50px 20px;
     text-align: center;
     margin-top: 30px;
@@ -504,7 +553,7 @@ button:hover {
 
 /* About Us Section */
 .about-us {
-    background-color: white;
+    background-color: #f8f9fa;
     padding: 60px 20px;
 }
 
@@ -558,7 +607,6 @@ button:hover {
     background-color: #457b9d;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -572,7 +620,7 @@ button:hover {
 
 .contact {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: white;
     text-align: center;
 }
 
@@ -858,4 +906,242 @@ button:hover {
     color: white;
     letter-spacing: 1px;
     font-weight: 300;
+}
+
+/* General Adjustments */
+
+@media (max-width: 768px) {
+    /* Adjust navbar for mobile */
+    .navbar {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #check:checked ~ .navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #0d1b2a;
+    }
+
+    /* Adjust title for mobile */
+    .title h1 {
+        font-size: 6vh;
+    }
+
+    .title p {
+        font-size: 2vh;
+    }
+
+    /* Adjust services section for mobile */
+    .services-items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .service-box {
+        padding: 20px;
+    }
+
+    /* Adjust destinations section for mobile */
+    .destination-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-content {
+        width: 90%;
+    }
+
+    .col-content img, .col-content video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust packages section for mobile */
+    .package-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-card {
+        width: 90%;
+    }
+
+    /* Adjust booking form for mobile */
+    form {
+        width: 90%;
+    }
+
+    /* Adjust about section for mobile */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    /* Adjust contact section for mobile */
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact form, .contact-info {
+        width: 90%;
+    }
+
+    /* Adjust footer for mobile */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Navbar Adjustments */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background: #0d1b2a;
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    #check:checked ~ .navbar {
+        left: 0;
+    }
+}
+
+/* Title Adjustments */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 6vh;
+    }
+
+    .title p {
+        font-size: 2vh;
+    }
+}
+
+/* Services Adjustments */
+
+@media (max-width: 768px) {
+    .services-items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .service-box {
+        padding: 20px;
+    }
+}
+
+/* Destinations Adjustments */
+
+@media (max-width: 768px) {
+    .destination-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-content {
+        width: 90%;
+    }
+
+    .col-content img, .col-content video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Packages Adjustments */
+
+@media (max-width: 768px) {
+    .package-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-card {
+        width: 90%;
+    }
+}
+
+/* Booking Form Adjustments */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}
+
+/* About Section Adjustments */
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+}
+
+/* Contact Section Adjustments */
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact form, .contact-info {
+        width: 90%;
+    }
+}
+
+/* Footer Adjustments */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }
