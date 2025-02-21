@@ -1009,29 +1009,6 @@ button:hover {
     }
   }
   @media (max-width: 768px) {
-    nav {
-        padding: 0 20px;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 60px;
-        left: -100%;
-        width: 100%;
-        background: #0d1b2a;
-        flex-direction: column;
-        transition: all 0.5s ease;
-    }
-
-    .navbar a {
-        text-align: center;
-        padding: 15px;
-    }
-
-    #check:checked ~ .navbar {
-        left: 0;
-    }
-    
     .checkbtn {
       display: block;
     }
@@ -1060,7 +1037,28 @@ button:hover {
   }
 
 @media (max-width: 768px) {
-    
+    nav {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background: #0d1b2a;
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    #check:checked ~ .navbar {
+        left: 0;
+    }
 }
 
 /* Title Adjustments */
