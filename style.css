@@ -178,6 +178,8 @@ nav .logo {
     transition: 0.3s ease-in-out;
     cursor: pointer;
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.05);
+    height: 250px;
+    width: 100%;
 }
 
 .service-image img {
@@ -202,8 +204,6 @@ nav .logo {
     transform: translateY(-5px);
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
 }
-
-@media (max-width: 1170px) {}
 
 /* Destinations */
 .destinations {
@@ -279,8 +279,6 @@ nav .logo {
     transform: scale(1.03);
     display: unset;
 }
-
-@media (max-width: 1170px) {}
 
 /* Package video Section */
 /* .packages {
@@ -751,10 +749,10 @@ button:hover {
 
 .detail-content .follow-apps .follow-apps-text {
     color: #ccc;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 2.17;
-    margin: 6px 14px 0 0
+    line-height: 1.17;
+    margin: 0px 11px 0 0;
 }
 
 .detail-content .follow-apps .social-icons {
@@ -887,28 +885,186 @@ button:hover {
     font-weight: 300;
 }
 
+@media (max-width: 1020px) {
+
+    .footer-section {
+        margin: 25px 10px 0px;
+    }
+
+    /* Footer Abouts Section */
+    .about-section {
+        flex-basis: 26%;
+    }
+
+    .detail-content {
+        padding-left: 5%
+    }
+
+    .detail-content .detail-content-slogan {
+        font-size: 12px;
+        margin-top: 6px
+    }
+
+    .detail-content .follow-apps {
+        margin-top: 10px
+    }
+
+    .detail-content .follow-apps .follow-apps-text {
+        font-size: 12px;
+        margin: 0px 11px 0 0;
+    }
+
+    .detail-content .follow-apps .social-icons a {
+        font-size: 15px;
+        margin: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .about-section .footer-logo-title {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .about-section .footer-logo-title .footer-logo {
+        width: 30px;
+        margin-right: 13px;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-section h4::after {
+        width: 70px;
+        height: 2px;
+        margin: 5px auto;
+    }
+
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .newsletter form {
+        padding: 0;
+        gap: 6px;
+    }
+
+    .newsletter input {
+        width: 80%;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .newsletter button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        margin: 0px 30px;
+        padding: 15px 0px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: px) {
+
+    .footer-section {
+        margin: 25px 10px 0px;
+    }
+
+    /* Footer Abouts Section */
+    .about-section {
+        flex-basis: 26%;
+    }
+
+    .detail-content {
+        padding-left: 5%
+    }
+
+    .detail-content .detail-content-slogan {
+        font-size: 12px;
+        margin-top: 6px
+    }
+
+    .detail-content .follow-apps {
+        margin-top: 10px
+    }
+
+    .detail-content .follow-apps .follow-apps-text {
+        font-size: 12px;
+        margin: 0px 11px 0 0;
+    }
+
+    .detail-content .follow-apps .social-icons a {
+        font-size: 15px;
+        margin: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .about-section .footer-logo-title {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .about-section .footer-logo-title .footer-logo {
+        width: 30px;
+        margin-right: 13px;
+    }
+
+    .footer-section h4 {
+        font-size: 0.87rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-section h4::after {
+        width: 70px;
+        height: 2px;
+        margin: 5px auto;
+    }
+
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+
+    .contact-section p {
+        font-size: 11px;
+    }
+
+    .newsletter input {
+        width: 70%;
+        padding: 4px 8px;
+        font-size: 9px;
+    }
+
+    .newsletter button {
+        padding: 4px 8px;
+        font-size: 9px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+}
+
+
+
 /* General Adjustments */
 
 @media (max-width: 768px) {
 
-    /* Adjust navbar for mobile */
-    .navbar {
-        display: none;
-    }
 
-    .checkbtn {
-        display: block;
-    }
 
-    #check:checked~.navbar {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #0d1b2a;
-    }
 
     /* Adjust title for mobile */
     .title h1 {
@@ -979,21 +1135,6 @@ button:hover {
     .contact-info {
         width: 90%;
     }
-
-    /* Adjust footer for mobile */
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        text-align: center;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 /* Navbar Adjustments */
@@ -1027,8 +1168,24 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
+    /* Adjust navbar for mobile */
+    .navbar {
+        display: none;
+    }
+
     .checkbtn {
         display: block;
+    }
+
+    #check:checked~.navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #0d1b2a;
     }
 
     nav ul li {
@@ -1096,6 +1253,16 @@ button:hover {
 }
 
 /* Destinations Adjustments */
+
+@media (max-width: 770px) {
+    .col-content h5 {
+        font-size: 20px;
+    }
+
+    .col-content p {
+        font-size: 20px;
+    }
+}
 
 /* @media (max-width: 768px) {
     .destination-content {
@@ -1168,6 +1335,7 @@ button:hover {
 /* Footer Adjustments */
 
 @media (max-width: 768px) {
+
     .footer-content {
         flex-direction: column;
         align-items: center;
